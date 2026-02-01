@@ -67,13 +67,15 @@ main {
 
 .banner1 {
     background: url(./Resources/Banner.png);
+    vertical-align: middle;
 }
 
 .banner2 {
     background: url(./Resources/Banner2.png);
+    vertical-align: middle;
 }
 
-footer{
+footer {
     text-align: center;
 }
 
@@ -90,14 +92,26 @@ footer{
     margin-bottom: 7px;
 }
 
-.footer-diss{
+.footer-diss {
     font-size: 18px;
     line-height: 50px;
     margin-bottom: 24px;
     letter-spacing: 3px;
 }
 
-.icons{
+.icons {
     margin: 0px auto;
     width: 21rem;
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 40rem) {
+    .banner1 {
+        background-position: 78.5rem;
+    }
+
+    .banner2 {
+        background-position: 37rem 0rem;
+    }
 }
