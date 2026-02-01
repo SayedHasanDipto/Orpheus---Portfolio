@@ -23,16 +23,12 @@ main {
     -webkit-text-fill-color: transparent;
     color: transparent;
     font-weight: bold;
-    font-size: 3rem;
     text-transform: uppercase;
     text-align: center;
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
 }
 
-.hero-header>span {
-    letter-spacing: 3rem;
-}
 
 .btn {
     padding: 6px 24px;
