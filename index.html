@@ -16,23 +16,30 @@
 
 <body class="text-white">
     <main class="pt-[32px]">
-        <nav class="max-w-[1496px] max-sm:w-full mx-auto flex justify-between items-center max-sm:flex-col">
-            <div>
+        <nav
+            class="max-w-[1496px] max-sm:w-full mx-auto flex justify-between items-center max-sm:flex-col p-4 relative">
+            <div class="flex justify-between items-center max-sm:w-full">
                 <img src="./Resources/Logo.png" alt="Logo">
+
+                <button onclick="toggleMenu()" class="sm:hidden text-white mt-[14px] focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-            <ul class="flex gap-[34px] items-center uppercase mt-[10px] max-sm:flex-col">
-                <li><a class="px-[12px] py-[12px]" href="#Works">Works</a></li>
-                <li><a class="px-[12px] py-[12px]" href="#Contribution">Contribution</a></li>
-                <li><a class="px-[12px] py-[12px]" href="#Community">Community</a></li>
-                <li><a class="px-[12px] py-[12px]" href="#Get in Touch">Get in Touch</a></li>
-                <li>
-                    <a class="px-[12px] py-[12px] flex items-center" href="#Get in Touch">
-                        <span class="material-symbols-outlined">
-                            light_mode
-                        </span>
-                    </a>
-                </li>
-            </ul>
+
+            <div id="nav-links" class="hidden sm:block">
+                <ul class="flex gap-[34px] items-center uppercase mt-[10px] max-sm:flex-col max-sm:mt-5">
+                    <li><a class="px-[12px] py-[12px]" href="#Works">Works</a></li>
+                    <li><a class="px-[12px] py-[12px]" href="#Contribution">Contribution</a></li>
+                    <li><a class="px-[12px] py-[12px]" href="#Community">Community</a></li>
+                    <li><a class="px-[12px] py-[12px]" href="#Get in Touch">Get in Touch</a></li>
+                    <li>
+                        <a class="px-[12px] py-[12px] flex items-center" href="#Get in Touch">
+                            <span class="material-symbols-outlined">light_mode</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </nav>
         <section
             class="hero-section flex max-sm:flex-col gap-[5rem] justify-between max-w-[1496px] mx-auto items-center my-[6rem] max-sm:m-4">
@@ -42,8 +49,10 @@
                 <p class="text-[24px] leading-[50px] pb-[46px]">Product & Graphic Designer, with experience in
                     delivering end-to-end UX/UI design for software products.</p>
                 <div class="flex max-sm:flex-col gap-[34px]">
-                    <button class="btn unfill-btn max-sm:w-[90%] max-sm:mx-auto"><a href="#">WORKS <i class="fa-solid fa-angle-down"></i></a></button>
-                    <button class="fill-btn btn max-sm:w-[90%] max-sm:mx-auto"><a href="#" class="uppercase text-[#0A0D11]">Free Stuff</a></button>
+                    <button class="btn unfill-btn max-sm:w-[90%] max-sm:mx-auto"><a href="#">WORKS <i
+                                class="fa-solid fa-angle-down"></i></a></button>
+                    <button class="fill-btn btn max-sm:w-[90%] max-sm:mx-auto"><a href="#"
+                            class="uppercase text-[#0A0D11]">Free Stuff</a></button>
                 </div>
             </div>
             <div>
@@ -81,7 +90,8 @@
             <div class="flex flex-col gap-[56px]">
                 <div class="banner1 text-center pt-[94px] pb-[86.71px] pl-[762px] max-sm:px-0 max-sm:py-[5rem]">
                     <h1 class="text-[42px] mb-[25px] max-sm:text-[28px]">3D Greek Statue Pack</h1>
-                    <p class="text-[2rem] leading-[50px] tracking-[1rem] mb-[25px] max-sm:tracking-[0px] max-sm:text-[20px]">
+                    <p
+                        class="text-[2rem] leading-[50px] tracking-[1rem] mb-[25px] max-sm:tracking-[0px] max-sm:text-[20px]">
                         Over 200 Greek style<br>sculpture
                     </p>
                     <button class="btn fill-btn text-black">
@@ -90,7 +100,8 @@
                 </div>
                 <div class="banner2 text-center pt-[94px] pb-[86.71px] pr-[790px] max-sm:px-0 max-sm:py-[5rem]">
                     <h1 class="text-[42px] mb-[25px] max-sm:text-[28px]">Greek Statue Avatars</h1>
-                    <p class="text-[2rem] leading-[50px] tracking-[1rem] mb-[25px] max-sm:tracking-[0px] max-sm:text-[20px]">
+                    <p
+                        class="text-[2rem] leading-[50px] tracking-[1rem] mb-[25px] max-sm:tracking-[0px] max-sm:text-[20px]">
                         +500 Greek style <br>
                         <span class="font-bold">User Avatars</span>
                     </p>
@@ -114,6 +125,13 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('hidden');
+        }
+    </script>
 </body>
 
 </html>
