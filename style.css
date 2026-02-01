@@ -51,3 +51,53 @@ main {
     font-size: 18px;
     background: linear-gradient(to right, #FFF5A1 0%, #BF841A 51%, #FFCD74 100%);
 }
+
+.carousel-header {
+    background: linear-gradient(to right, #FFF5A1 0%, #BF841A 51%, #FFCD74 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-family: monospace;
+}
+
+#white {
+    color: white;
+}
+
+.banner1 {
+    background: url(./Resources/Banner.png);
+}
+
+.banner2 {
+    background: url(./Resources/Banner2.png);
+}
+
+footer{
+    text-align: center;
+}
+
+.gold-gradient {
+    background: linear-gradient(to right, #FFF5A1 0%, #BF841A 51%, #FFCD74 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-family: monospace;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 7px;
+}
+
+.footer-diss{
+    font-size: 18px;
+    line-height: 50px;
+    margin-bottom: 24px;
+    letter-spacing: 3px;
+}
+
+.icons{
+    margin: 0px auto;
+    width: 21rem;
+}
