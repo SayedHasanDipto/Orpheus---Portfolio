@@ -114,4 +114,8 @@ footer {
     .banner2 {
         background-position: 37rem 0rem;
     }
+
+    .footer-diss {
+        font-size: 16px;
+    }
 }
